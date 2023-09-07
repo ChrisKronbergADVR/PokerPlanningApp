@@ -1,0 +1,72 @@
+h1{
+    text-align: center;
+}
+
+#pokerTable{
+    margin:auto;
+    position:relative;
+    width:30rem;
+    height:10rem;
+    border: .2rem solid black;
+    background-color: green;
+    color:white;
+    opacity: .4;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top:4rem;
+}
+
+#tableText{
+    position:relative;
+    align-self: center;
+}
+
+
+#guessList{
+    justify-content: center;
+    margin-top: 2rem;
+    display: flex;
+    list-style-type:none;
+    flex-wrap: wrap;
+}
+
+.guess{
+    margin-top: 1rem;
+    margin-right:1rem;
+    width: 2rem;
+    height:3rem;
+    background-color : whitesmoke;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.guess:hover{
+    border: .1px solid  rgba(255, 0, 0, .2);
+    background-color:transparent;
+}
+
+.guess:active{
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-direction: normal;  
+}
+
+@keyframes example {
+    0%   {top:0px;}
+    100% {top:-100px;align-items: center;opacity:0;}
+  }
+
+@media (max-width: 992px) {
+    #pokerTable{
+        width:20rem;
+        height:10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #pokerTable{
+        width: 15rem;
+        height:15rem;
+    }
+}
